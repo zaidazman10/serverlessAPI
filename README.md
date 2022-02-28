@@ -4,7 +4,7 @@
 
 This documentation aims to provide all the information you need to work with our API.
 
-<aside>As you scroll, you'll see code examples for working with the API in different programming languages.</aside>
+<aside>As you scroll, you'll see examples for working with the API.</aside>
 
 > Base URL
 
@@ -14,33 +14,47 @@ https://3mrny9luph.execute-api.ap-southeast-1.amazonaws.com
 
 # Endpoints
 
-## Display a listing of the resource.
+### Display a listing of the contacts.
 
 * `GET api/contacts`
 
-## Store a newly created resource in storage.
+### Store a newly created contacts in storage.
 
 * `POST api/contacts`
 
-## Display the specified resource.
+### Display the specified contacts.
 
 * `GET api/contacts/{id}`
 
-id  integer  
+#### Required
+`id=[integer]`
+
 The ID of the contact.
 
-## Update the specified resource in storage.
+### Update the specified contacts in storage.
 
 * `PUT api/contacts/{id}`
 
-## Remove the specified resource from storage.
+### Remove the specified contacts from storage.
 
 * `DELETE api/contacts/{id}`
 
-## Search for a specific contact information.
+### Search for a specific contacts information.
 
 * `GET api/contacts/search/{parameter}`
 
-parameter  string  
+#### Required
+`parameter=[string]`
+
+#### eg.
+`email=john`
+  
 
 * `POST api/contacts/get-contact`
+
+```yaml
+{
+    "ordered_by": "created_at",
+    "sorted_by": "desc"
+}
+```
