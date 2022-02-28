@@ -49,6 +49,7 @@ The ID of the contact.
 #### eg.
 `email=john`
   
+### To Ordered BY `create_at` and Sorted BY `desc` 
 
 * `POST api/contacts/get-contact`
 
