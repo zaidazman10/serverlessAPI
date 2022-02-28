@@ -139,5 +139,23 @@ class ContactController extends Controller
          return $select->get();   
     }
 
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create() {
+        //not required in APIs
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function edit() {
+        //not required in APIs
+    }
+
     
 }
